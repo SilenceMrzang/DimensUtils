@@ -1,7 +1,7 @@
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
-        DensityUtils.initFolder("./dimens",ScreenDensity.values());
+        //生成适配文件
+        ScreenUtils.getInstance().initFolder("../dimens", ScreenDensityEnum.values());
     }
 }

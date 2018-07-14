@@ -4,9 +4,10 @@
  * @author mr.zang
  * @date 2018/07/13
  */
-public enum ScreenDensity {
-//    DENSITY_300(300),
-//    DENSITY_310(310),
+public enum ScreenDensityEnum {
+
+    DENSITY_300(300),
+    DENSITY_310(310),
     DENSITY_320(320),
     DENSITY_330(330),
     DENSITY_340(340),
@@ -20,7 +21,7 @@ public enum ScreenDensity {
 
     private int density;
 
-    ScreenDensity(int density) {
+    ScreenDensityEnum(int density) {
         this.density = density;
     }
 
