@@ -27,3 +27,20 @@ px/dp/sp 之间的换算关系：
 引用:
 
 [https://www.cnblogs.com/JLZT1223/p/6784449.html]
+
+
+常见的几种适配做法：
+
+- 1、宽高限定符适配：设置一个默认的分辨率 其他的分辨率根据该基准换算分辨率 存在不同values-height*width 文件夹中的dimens.xml文件中
+
+- 2、鸿翔大佬的适配方案 [https://github.com/hongyangAndroid/AndroidAutoLayout]
+
+- 3、smallestWidth适配：smallestWidth适配，或者叫sw限定符适配。指的是Android会识别屏幕可用高度和宽度的最小尺寸的dp值
+（其实就是手机的宽度值），然后根据识别到的结果去资源文件中寻找对应限定符的文件夹下的资源文件。
+举个例子，小米5的dpi是480,横向像素是1080px，根据px=dp(dpi/160)，
+横向的dp值是1080/(480/160),也就是360dp,系统就会去寻找是否存在value-sw360dp的文件夹以及对应的资源文件。
+
+引用：
+
+[https://www.jianshu.com/p/a4b8e4c5d9b0]
+

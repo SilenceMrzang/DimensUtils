@@ -111,7 +111,7 @@ public class ScreenUtils {
      * @return
      */
     private static float px2dp(float pxValue, int sw) {
-        float dpValue = (pxValue / (sw / 160)) + 0.5f;
+        float dpValue = (pxValue * 160) / sw;
         BigDecimal bigDecimal = new BigDecimal(dpValue);
         float finDp = bigDecimal.setScale(2, BigDecimal.ROUND_HALF_UP).floatValue();
         return finDp;
